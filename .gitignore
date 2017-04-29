@@ -20,6 +20,7 @@ reated by https://www.gitignore.io/api/java,linux,intellij
 .idea/**/dynamic.xml
 .idea/**/uiDesigner.xml
 .idea/
+*.iml
 
 # Gradle:
 .idea/**/gradle.xml
