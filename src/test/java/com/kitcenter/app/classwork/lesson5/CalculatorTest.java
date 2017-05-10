@@ -1,17 +1,22 @@
 package com.kitcenter.app.classwork.lesson5;
 
 import org.junit.*;
+import org.junit.runners.MethodSorters;
+
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 public class CalculatorTest {
 
     /*
     Initialize test data fot Calculator functionality
      */
+
     @BeforeClass
     public static void setBeforeClassSetUp() {
 
     }
 
+    @Ignore("Not ready yet Bug#1") //when you need to ignore some test
     @Test
     public void sumTest1(){
         double expectedResult = 50;
@@ -189,7 +194,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public  void divicionTest6(){
+    public  void divicionTestNegative6(){
         double expectedResult = 0;
         Calculator calculator = new Calculator();
         double actualResult = calculator.divicion(985, 0);
