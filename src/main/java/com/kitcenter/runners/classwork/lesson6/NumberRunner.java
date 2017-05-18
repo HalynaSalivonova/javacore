@@ -2,8 +2,28 @@ package com.kitcenter.runners.classwork.lesson6;
 
 import com.kitcenter.app.classwork.lesson6.NumberEven;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class NumberRunner {
     public static void main(String[] args) {
-        NumberEven.calculate();
+        run();
+    }
+    public static void run(){
+        Scanner scanner = new Scanner(System.in);
+        try {
+            double a = scanner.nextDouble();
+
+            Boolean result = NumberEven.isEven(a);
+            if (result == null) {
+                System.out.println("It is rather even nor odd number");
+            } else if(result){
+                System.out.println("Entered number is even");
+            } else {
+                System.out.println("Entered number is odd");
+            }
+        } catch(InputMismatchException exception){
+            System.out.println("Incorrect input parameters. Please enter double");
+        }
     }
 }

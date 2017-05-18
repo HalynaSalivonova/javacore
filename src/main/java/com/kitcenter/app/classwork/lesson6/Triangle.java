@@ -3,6 +3,10 @@ package com.kitcenter.app.classwork.lesson6;
 
 public class Triangle {
     public  static boolean isRightTriangles(double a, double b, double c){
+        if(a <= 0 || b <= 0 || c <= 0){
+            return false;
+        }
+
         if(a == b){
             return Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2);
         } else if(a == c){
