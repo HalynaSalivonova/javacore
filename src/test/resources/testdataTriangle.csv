@@ -1,0 +1,9 @@
+argumentA, argumentB, argumentC, expectedResult
+3,4,5,true
+4,3,5,true
+5,4,3,true
+0,8,3,false
+8,7,-6,false
+4,6,8,false
+4.86,6,8,false
+3.3,4.4,5.5,true

@@ -1,0 +1,5 @@
+argumentA, argumentB, expectedResult
+8,true
+3,false
+-7898,true
+69.789,false
