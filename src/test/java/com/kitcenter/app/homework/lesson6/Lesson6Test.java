@@ -150,5 +150,4 @@ public class Lesson6Test {
         Boolean actualResult = triangle.isRightTriangles(3.3, 4.4, 5.5);
         Assert.assertTrue(actualResult);
     }
-
 }

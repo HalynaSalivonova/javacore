@@ -2,7 +2,7 @@ package com.kitcenter.app.classwork.lesson5;
 
 
 public class Calculator {
-    public double sum(double numberOne, double numberTwo){
+    public static double sum(double numberOne, double numberTwo){
         double result = numberOne + numberTwo;
         return result;
         //return numberOne + numberTwo;

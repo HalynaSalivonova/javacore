@@ -15,6 +15,6 @@ public class LoopRunner {
         loop.condition(numberOne, numberTwo);
         loop.printByCycle(10);
         loop.printInfo(1);
-        loop.counterOdd(20);
+        loop.counterOdd(100);
     }
 }

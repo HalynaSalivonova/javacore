@@ -27,9 +27,9 @@ public class Loop {
         System.out.println("After pre-increment " + c);
     }
 
-    public int counterOdd(int limit){
-        int counter = 0;
-        for (int i = 0; i <= limit; i++) {
+    public double counterOdd(double limit){
+        double counter = 0;
+        for (double i = 0; i <= Math.abs(limit); i++) {
             if(i%2 != 0) {
                 counter++;
             }

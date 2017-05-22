@@ -4,7 +4,6 @@ package com.kitcenter.runners.homework.lesson6;
 import com.kitcenter.runners.classwork.lesson6.CompareRunner;
 import com.kitcenter.runners.classwork.lesson6.TriangleRunner;
 import com.kitcenter.runners.classwork.lesson6.NumberRunner;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -41,7 +40,7 @@ public class Lesson6 {
                     TriangleRunner.run();
                 } else {
                     return;
-                }
+            }
         }
     }
 }

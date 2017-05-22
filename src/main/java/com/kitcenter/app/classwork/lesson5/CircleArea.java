@@ -1,31 +1,24 @@
 package com.kitcenter.app.classwork.lesson5;
 
 
-import java.util.Scanner;
-
 public class CircleArea {
-
-    public static final double PI = 3.14d;
-    public  static void calculate(){
-        Scanner scanner = new Scanner(System.in);
-        double radius1 = scanner.nextDouble();
-        double radius2 = scanner.nextDouble();
-        double circleArea1 = PI * Math.pow(radius1, 2); //Math.pow - radius * radius, Math.PI - 3.14.
-        double circleArea2 = PI * Math.pow(radius2, 2);
-        System.out.println("Area1 is " + circleArea1 + " Area2 is " + circleArea2);
-
-//        if (circleArea1 > circleArea2){
-//            System.out.println("circleArea1 is bigger");
-//        } else {
-//            System.out.println("circleArea2 is bigger");
-//        }
-
-        if ((radius1 > radius2) || (circleArea1 > circleArea2)){
-            System.out.println("circleArea1 is bigger");
-            System.out.println("circleArea2 is smaller");
+    public double getArea(double radius){
+        if(radius <= 0){
+            throw new IllegalArgumentException("Values of radius1 or radius2 is negative or equals zero");
         } else {
-            System.out.println("circleArea2 is bigger");
-            System.out.println("circleArea1 is smaller");
+            return Math.PI * Math.pow(radius, 2);
+        }
+    }
+
+    public static Boolean calculate(double circleArea1, double circleArea2){
+        if(circleArea1 <= 0 || circleArea2 <= 0){
+            throw new IllegalArgumentException("Values of circleArea1 or circleArea2 is negative or equals zero");
+        }
+        Boolean result = (circleArea1 == circleArea2);
+        if(result){
+            return null;
+        } else {
+            return circleArea1 > circleArea2;
         }
     }
 }
