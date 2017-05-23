@@ -1,5 +1,5 @@
-argumentA, argumentB, expectedResult
-8,true
-3,false
--7898,true
-69.789,false
+argumentA, expectedResult
+20,10
+21,11
+0,0
+-100,50
