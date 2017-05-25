@@ -17,29 +17,31 @@ public class Lesson6 {
             System.out.println("For work with Triangle press 3");
             System.out.println("For exit press 4");
 
-            int classNum;
+            int classNum = 0;
 
             try {
                 classNum = scanner.nextInt();
-            } catch(InputMismatchException exception){
-                System.out.println("Incorrect data was enter. Please use double");
-                continue;
+            } catch (InputMismatchException e){
+                System.out.println("Incorrect input parameters");
             }
 
-            if (classNum == 1) {
+            switch(classNum) {
+                case 1:
                     System.out.println("You selected CompareNumbers.");
-                    System.out.println("Please, type two numbers.");
                     CompareRunner.run();
-                } else if (classNum == 2) {
+                    break;
+                case 2:
                     System.out.println("You selected NumberEven.");
-                    System.out.println("Please, type any number.");
                     NumberRunner.run();
-                } else if (classNum == 3) {
+                    break;
+                case 3:
                     System.out.println("You selected Triangle.");
-                    System.out.println("Please, type three numbers.");
                     TriangleRunner.run();
-                } else {
-                    return;
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Incorrect input data");
             }
         }
     }

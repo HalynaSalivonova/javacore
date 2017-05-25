@@ -10,6 +10,7 @@ public class NumberRunner {
         run();
     }
     public static void run(){
+        System.out.println("Please, type any number.");
         Scanner scanner = new Scanner(System.in);
         try {
             double a = scanner.nextDouble();

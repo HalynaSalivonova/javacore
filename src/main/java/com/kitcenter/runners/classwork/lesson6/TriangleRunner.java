@@ -12,6 +12,7 @@ public class TriangleRunner {
     }
 
     public static void run() {
+        System.out.println("Please, type three numbers.");
         try {
             Scanner scanner = new Scanner(System.in);
             double a = scanner.nextDouble();

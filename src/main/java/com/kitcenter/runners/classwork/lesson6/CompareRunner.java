@@ -12,17 +12,20 @@ public class CompareRunner {
     }
 
     public static void run(){
+        System.out.println("Please, type two numbers.");
         Scanner scanner = new Scanner(System.in);
         try {
             double a = scanner.nextDouble();
             double b = scanner.nextDouble();
 
             Boolean result = CompareNumbers.isBigger(a, b);
-            if(result == null){
+
+//            System.out.println(a > b ? a : b); operation if-? else-:
+           if(result == null){
                 System.out.println("Number: " + b + " is equals: " + a);
-            } else if(result) {
+           } else if(result) {
                 System.out.println("Number: " + a + " is bigger than: " + b);
-            } else {
+           } else {
                 System.out.println("Number: " + b + " is bigger than: " + a);
             }
         } catch(InputMismatchException exception){
