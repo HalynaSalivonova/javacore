@@ -9,6 +9,7 @@ public class DifferentArraysRunner {
         differentArrays.oddArray();
         differentArrays.randomArray();
         differentArrays.bigRandomArray();
+        differentArrays.twoDimensionArrays();
         differentArrays.twoDimensionArraysStars();
     }
 }
