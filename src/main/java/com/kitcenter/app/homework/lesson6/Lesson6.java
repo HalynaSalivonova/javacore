@@ -1,9 +1,9 @@
-package com.kitcenter.runners.homework.lesson6;
+package com.kitcenter.app.homework.lesson6;
 
 
-import com.kitcenter.runners.classwork.lesson6.CompareRunner;
-import com.kitcenter.runners.classwork.lesson6.TriangleRunner;
-import com.kitcenter.runners.classwork.lesson6.NumberRunner;
+import com.kitcenter.runners.homework.hometask6.CompareRunner;
+import com.kitcenter.runners.homework.hometask6.TriangleRunner;
+import com.kitcenter.runners.homework.hometask6.NumberRunner;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

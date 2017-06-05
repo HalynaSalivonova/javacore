@@ -1,6 +1,5 @@
-package com.kitcenter.runners.homework.lesson8;
+package com.kitcenter.app.homework.lesson8;
 
-import java.util.Random;
 import static java.lang.Integer.*;
 
 public class DifferentArrays {

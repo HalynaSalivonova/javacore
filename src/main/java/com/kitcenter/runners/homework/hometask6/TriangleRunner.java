@@ -1,4 +1,4 @@
-package com.kitcenter.runners.classwork.lesson6;
+package com.kitcenter.runners.homework.hometask6;
 
 import com.kitcenter.app.classwork.lesson6.Triangle;
 
