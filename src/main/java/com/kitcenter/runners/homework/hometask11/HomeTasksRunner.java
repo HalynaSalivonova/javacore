@@ -27,7 +27,7 @@ public class HomeTasksRunner {
             System.out.println("For work with SecondArrayParser press 10");
             System.out.println("For exit press 11");
 
-            int classNum = 0;
+            int classNum;
 
             try {
                 classNum = scanner.nextInt();
