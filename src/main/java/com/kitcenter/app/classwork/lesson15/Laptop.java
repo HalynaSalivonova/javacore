@@ -49,27 +49,6 @@ public class Laptop {
         System.out.println("Fix2");
     }
 
-
-
-//better practise
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Laptop)) return false;
-
-        Laptop laptop = (Laptop) o;
-
-        if (getCpu() != laptop.getCpu()) return false;
-        return getRam() == laptop.getRam();
-
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getCpu(), getRam());
-    }
-
-
 //    @Override
 //    public boolean equals(Object o) {
 //        if (this == o) return true;
